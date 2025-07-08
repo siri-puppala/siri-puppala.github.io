@@ -142,3 +142,98 @@ Rect(262,105,75,25, fill='white')
   </footer>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CMU Project - Animation & Interaction</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: navy;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 30px;
+    }
+
+    iframe {
+      border: none;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    .description {
+      max-width: 500px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+
+    .description h2 {
+      color: navy;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a.back-link {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      color: navy;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Siri's Portfolio</h1>
+    <h2>CMU Project: Interactive Animation</h2>
+  </header>
+
+  <div class="container">
+    <iframe width="410" height="460"
+      src="https://academy.cs.cmu.edu/sharing/yellowFrog770445/embed">
+    </iframe>
+
+    <div class="description">
+      <h2>Project Description</h2>
+      <p>
+        This project showcases interactive animation using Python graphics.
+        I used code to create movement, detect mouse events, and change object properties dynamically.
+        The visuals demonstrate how user input can control elements on the screen, allowing for creative expression through programming.
+      </p>
+
+      <h3>Unit 2 Concepts Used:</h3>
+      <ul>
+        <li><strong>Mouse Events:</strong> Used <code>onMousePress</code> and <code>onMouseMove</code> to detect user actions.</li>
+        <li><strong>Animation:</strong> Used <code>onStep</code> to update object positions over time.</li>
+        <li><strong>Conditionals:</strong> Applied <code>if</code> statements to control how objects react to user input.</li>
+        <li><strong>Object Properties:</strong> Modified shapes (like changing color, size, or position) in real time.</li>
+        <li><strong>Event-Driven Programming:</strong> The program reacts to user interaction, making it interactive and fun.</li>
+      </ul>
+    </div>
+  </div>
+
+  <a class="back-link" href="index.html">← Back to Home</a>
+
+</body>
+</html>
