@@ -119,7 +119,7 @@ Rect(287,80,25,75, fill='white')
 Rect(262,105,75,25, fill='white')
 </pre>
  <section class="project-description">
-    <h5>Project Description</h5>
+    <h5>Code Description</h5>
     <p>
       This project represents two United Nations Sustainable Development Goals through code-based graphics.
     </p>
@@ -246,7 +246,7 @@ Rect(262,105,75,25, fill='white')
             
         </pre>
 <section class="project-description">
-    <h3>Project Description</h3>
+    <h3>Code Description</h3>
       <p>
         The graphic created a cross which symbolizes health, while the label explains the solution. The code defined the parameters of the cross 
         to be at different locations in different colors when the mouse is pressed to the next page. 
@@ -267,3 +267,134 @@ Rect(262,105,75,25, fill='white')
   </footer>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 20px auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .iframe-container {
+      flex: 1 1 410px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .description {
+      flex: 1 1 410px;
+      padding: 20px;
+    }
+
+    iframe {
+      border: 1px solid #ccc;
+    }
+
+    h2 {
+      color: #2e8b57;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2e8b57;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    a.button:hover {
+      background-color: #246b45;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Project 3</h1>
+  </header>
+
+  <div class="container">
+    <div class="iframe-container">
+      <iframe width="410" height="460"
+        src="https://academy.cs.cmu.edu/sharing/gainsboroSpider505639/embed">
+      </iframe>
+    </div>
+    <div class="description">
+      <h2>About the Project</h2>
+      <p>
+        This project explores sustainable development through interactive game. 
+        Players can click around the grass area to plant trees. The goal is to collect money($500) to donate for new life growing. 
+        The amount of money donated depends on where the user chooses to plant their tree.
+      </p>
+
+      <h3>Concepts Learned in Unit 3</h3>
+      <ul>
+        <li>Using conditionals</li>
+        <li>Functions with parameters</li>
+        <li>If-else statments</li>
+        <li>Helper functions</li>
+      </ul>
+ <pre style="background-color:#f0f0f0; padding: 10px; font-family: monospace; overflow-x: auto; text-align: center">
+          def plant(x,amt):
+    if(x<=200):
+        total.value-=25
+        donated.value+=25
+    if(x >= 200):
+        total.value-=50
+        donated.value+=50
+      
+    if (mouseX>=200):
+        Tree5(mouseX,mouseY)
+    if (mouseX<=200):
+        Tree2(mouseX,mouseY)
+      
+        plant(mouseX,2)
+        plant(mouseX,5) 
+       </pre>
+<section class="project-description">
+    <h3>Code Description</h3>
+      <p>
+        This is a custom function that states 2 parameters(x and amt). 
+        I used multiple if statements to change the number of money donated and in total when the mouse is clicked on either sides of the canvas. 
+        The call statements tell us where the plant is on the canvas and how much money should be donated.  
+      </p> 
+
+</section>
+    
+    </div>
+  </div>
+ <a href="index.html" class="button">Back to Home</a>
+</body>
+</html>
+
