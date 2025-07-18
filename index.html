@@ -394,13 +394,6 @@ Rect(262,105,75,25, fill='white')
     
     </div>
   </div>
- <a href="index.html" class="button">Back to Home</a>
-
-      
-       <footer>
-    &copy; 2025 Siri's Portfolio. All rights reserved.
-  </footer>
-      
 </body>
 </html>
 
@@ -494,9 +487,44 @@ Rect(262,105,75,25, fill='white')
     </div>
   </div>
 
+   <pre style="background-color:#f0f0f0; padding: 10px; font-family: monospace; overflow-x: auto; text-align: center">
+
+    def onKeyPress(key):
+      if(key=='space'):
+        page.value +=1
+        page.value<=8
+        print(page.value)
+        if(page.value == 1):
+            title.visible=True
+     #siri     
+    def onMouseMove(pressX,pressY):
+      if(page.score==6 and page.value==8):
+        check.hits(pressX,pressY)==True
+      if(check.hits(pressX,pressY)==True):
+            check.toFront()
+       </pre>
+      <section class="Code Description">
+    <h3>Code Description</h3>
+      <p>
+        The code starts with a function on KeyPress that allows a page to be added each time the 'space' key is pressed until page 8.  
+        I also choose to use hits along with if statments on MouseMove to make a check mark visible on the results page if the user has passed
+        Object properties helped define labels within the funtion.
+      </p> 
+
+</section>
+    
+    </div>
+  </div>
+
   <div style="text-align: center;">
     <a href="index.html" class="button">⬅ Back to Home</a>
   </div>
+
+      
+       <footer>
+    &copy; 2025 Siri's Portfolio. All rights reserved.
+  </footer>
+      
 
 </body>
 </html>
