@@ -517,18 +517,145 @@ Rect(262,105,75,25, fill='white')
     
     </div>
   </div>
+  
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project 5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f6f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .description {
+      max-width: 500px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    iframe {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #001f3f;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    a.button:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1></h1>
+    <p>Part of Siri's Honors Computer Science Portfolio</p>
+  </header>
+
+  <div class="container">
+    <iframe width="410" height="460"
+      src="https://academy.cs.cmu.edu/sharing/purpleElephant599429/embed">
+    </iframe>
+
+    <div class="description">
+      <h2>About the Project</h2>
+      <p>
+        This project is built as an interactive game of 2 levels of maze run. The first level runs on 
+        functions like onKeyHold and uses directional arrows like up,down,left,right to move the mouse
+        around the maze and collect cheese. The second level is to avoid the mousetraps and reach home.
+      </p>
+
+      <h3>Concepts from Unit 5:</h3>
+      <ul>
+        <li>Lists and indexing</li>
+        <li>Compound Conditionals</li>
+        <li>OnKeyHold</li>
+        <li>Multiple Keys</li>
+        <li>Nested Conditionals</li>
+      </ul>
+    </div>
+  </div>
+  
+ <pre style="background-color:#f0f0f0; padding: 10px; font-family: monospace; overflow-x: auto; text-align: center">
+
+    
+def level(levelnum):            
+    if(mouse.hitsShape(exitrect)):
+      if(levelnum==1):
+          finalResults1.visible=True
+          finalResults1.toFront()
+    elif(trap1.visible==True or trap2.visible==True):
+      if(levelnum==2):
+          finalResults2.visible=True
+          finalResults2.toFront()
+    elif(trap1.visible==True and trap2.visible==True):
+      if(levelnum==2):
+          finalResults2.visible=True
+          finalResults2.toFront()
+    elif(mouse.hitsShape(exitrect) and levelnum==1):
+      if(not mouse.hitsShape(mouseTrap1) and not mouse.hitsShape(mouseTrap2) and levelnum==2):
+          finalResults3.visible=True
+          finalResults3.toFront() 
+
+   
+               level(1)
+               level(2)                                                                                                              
+          
+       </pre>
+      <section class="project-description">
+    <h3>Code Description</h3>
+      <p>
+        The code runs on a custom function 'level' as the game consists of 2 levels. 
+        The call statements change by the different pages. After a player plays each level,
+        depending on if the goal is acheieved on each level, the win or lose statement pop up.
 
   <div style="text-align: center;">
     <a href="index.html" class="button">⬅ Back to Home</a>
   </div>
 
-      
-       <footer>
+         <footer>
     &copy; 2025 Siri's Portfolio. All rights reserved.
   </footer>
       
 
 </body>
 </html>
+
 
 
