@@ -651,9 +651,7 @@ Rect(262,105,75,25, fill='white')
       </div>
     </div>
 
-  <div style="text-align: center;">
-    <a href="index.html" class="button">⬅ Back to Home</a>
-  </div>
+
 
      
 </body>
@@ -753,15 +751,17 @@ Rect(262,105,75,25, fill='white')
 
   
 <pre style="background-color:#f0f0f0; padding: 10px; font-family: monospace; overflow-x: auto; text-align: center">
-  def onStep():
-    if(page.value==4):
-    if  app.game2==True:
-      burgers.visible=False
-      egg.visible=False
-      bomb.visible=False
-      time1.visible=False
-      time.visible=False
-      timer.visible=False
+
+  
+          def onStep():
+        if(page.value==4):
+          if  app.game2==True:
+            burgers.visible=False
+            egg.visible=False
+            bomb.visible=False
+            time1.visible=False
+            time.visible=False
+            timer.visible=False
       app.background='lightCoral'
     if (caption.value>=80 and caption1.value>=80):
       app.background = 'darkRed'
