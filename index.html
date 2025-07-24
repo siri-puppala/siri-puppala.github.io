@@ -655,13 +655,154 @@ Rect(262,105,75,25, fill='white')
     <a href="index.html" class="button">⬅ Back to Home</a>
   </div>
 
-      <footer>
-    &copy; 2025 Siri's Portfolio. All rights reserved.
-  </footer>
-
+     
 </body>
 </html>
       
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unit 6 Project – Siri's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #002b5c;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px;
+      gap: 40px;
+    }
+
+    iframe {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .description {
+      max-width: 500px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #002b5c;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    a.button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Final Project </h1>
+    <p>Part of Siri's Honors Computer Science Portfolio</p>
+  </header>
+
+  <div class="container">
+    <iframe width="410" height="460"
+      src="https://academy.cs.cmu.edu/sharing/linenEagle180681/embed">
+    </iframe>
+
+    <div class="description">
+      <h2>About the Project</h2>
+      <p>
+        This project highlights a worldwide problem with statistics. It also has 2 interactive games 
+        that help users understand the issue better. The first game is drop a pick game where
+        food is dropped and users have to pick it up. The second game is a a drag and drop game
+        where the food collected from the first game in transported to 2 towns that suffer from hunger.
+      </p>
+
+      <h3>Concepts from Unit 6:</h3>
+      <ul>
+        <li>Defining and calling functions</li>
+        <li>Using parameters to pass information</li>
+        <li>OnStep</li>
+        <li>Group and motion </li>
+        <li>Random</li>
+      </ul>
+    </div>
+  </div>
+
+  
+  def onStep():
+    if(page.value==4):
+    if  app.game2==True:
+      burgers.visible=False
+      egg.visible=False
+      bomb.visible=False
+      time1.visible=False
+      time.visible=False
+      timer.visible=False
+      app.background='lightCoral'
+    if (caption.value>=80 and caption1.value>=80):
+      app.background = 'darkRed'
+      Label('You saved many people from hunger', 200,150, fill='white', size =18
+    def package2(X,Y)
+      Rect(115,340,50,50,fill='tan',border='sienna', visible=True),
+      Rect(106,335,68,10, fill='tan', border='sienna'),
+      Oval(140,366,37,40, fill='sandyBrown', border='chocolate'),
+      Line(123,362,157,362, fill='crimson', lineWidth=5),
+      Line(123,368,157,368, fill='sienna', lineWidth=5),
+      Line(123,374,157,374, fill='green', lineWidth=5),
+      Polygon(123,365,140,372,157,365, fill='yellow'),
+      if(package1.contains(mouseX,mouseY)):
+        package1.centerX=mouseX
+        package1.centerY=mouseY
+        if (town1.containsShape(package1)):
+            caption.value +=1
+  </pre>
+      <section class="project-description">
+    <h3>Code Description</h3>
+      <p>
+        The code runs on a custom function 'package1' that has the food from Game 1
+        which inclue if statments to tell the code to increase the number of people who
+        received food everytime a package in drop in both towns. I also used the OnStep function
+        to make this game run when the page number = 4.
+     </p>
+
+ </section>
+  
+
+   
+  <div style="text-align: center;">
+    <a href="index.html" class="button">⬅ Back to Home</a>
+  </div>
+
+   <footer>
+    &copy; 2025 Siri's Portfolio. All rights reserved.
+  </footer>
+  
+
+</body>
+</html>
 
 
 
